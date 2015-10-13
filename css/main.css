@@ -150,7 +150,7 @@ body {font: normal 15px 'latoregular';}
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
         box-sizing: border-box;}
-    .tariff-sr-right {background: #f2f2f2; }
+    .tariff-sr-right {background: #f2f2f2;  }
         .tariff-sr-header {background: #d00a11; text-align: center; height: 64px; color: #fff; text-transform: uppercase; font: normal 18px/64px 'latoregular';}
         .tariff-sr-right .tariff-sr-header {background: #ed1c24;}
         .tariff-item {padding: 39px 0 45px 80px; font: normal 15px 'latoregular';}
