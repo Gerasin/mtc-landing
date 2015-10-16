@@ -239,6 +239,7 @@ body {font: normal 15px 'latoregular';}
     
     .footer {background: #b0b1b5 url(../img/footer-bg.png) center 0 no-repeat; padding: 150px 0 60px; font: 13px/20px Arial; color: #fff; text-align: center;}
         .footer p {margin: 0;}
+        .footer a {text-decoration: none; color: #fff;}
 
 .mob-menu {display: none;}
 
