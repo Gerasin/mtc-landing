@@ -37,7 +37,36 @@ $(document).ready(function(){
 	        scrollTop: $(anchor.attr('href')).offset().top - 125
 	    }, 1000);
 		return false;
-	})
+	});
+
+
+	if($(window).width() < 760) {
+		$('.tariff-sr-header').click(function(){
+			var tariffIndex = $(this).parent('div').index();
+			$('.tariff-sr-box').removeClass('active');
+			$(this).parent('div').addClass('active');
+			$('.tariff-td-1, .tariff-td-2').hide();
+			if(tariffIndex == 0) {
+				$('.tariff-td-1').show();
+			} else {
+				$('.tariff-td-2').show();
+			}
+		});
+
+		// menu mob
+		$('.mob-menu').click(function(){
+			$('.head-menu ul').slideToggle();
+			$('.mob-menu').toggleClass('active');
+			return false;
+		});
+		$('.head-menu ul li a').click(function(){
+			$('.head-menu ul').slideUp();
+			$('.mob-menu').removeClass('active');
+			console.log('da');
+		})
+	};
+
+
 
 
 });

@@ -95,11 +95,19 @@ textarea {
    Author's custom styles
    ========================================================================== */
 body {font: normal 15px 'latoregular';}
-.head-menu {position: fixed; padding: 28px 0 0; height: 68px; left: 0; right: 0; z-index: 70; height: 96px;
+.head-menu {
+    position: fixed;
+    padding: 21px 0 0;
+    height: 68px;
+    left: 0;
+    right: 0;
+    z-index: 70;
+    height: 88px;
     -webkit-transition: background 0.2s linear;
     -o-transition: background 0.2s linear;
-    transition: background 0.2s linear;}
-    .logo {float: left; width: 328px;}
+    transition: background 0.2s linear;
+    }
+    .logo {float: left; width: 379px;}
     .head-menu ul {padding: 0; margin: 0;}
         .head-menu ul li {list-style: none; float: left; margin: 20px 46px 0 0; padding: 0; text-transform: uppercase; font: normal 15px 'latoheavy';}
             .head-menu ul li a {color: #fff; text-decoration: none; position: relative;}
@@ -109,7 +117,7 @@ body {font: normal 15px 'latoregular';}
                 transition: opacity 0.2s linear;}
             .head-menu ul li.active a:before {opacity: 1;}
             .head-menu ul li a:hover:before {opacity: 1;}
-.head-menu.active {background: #fff;}
+.head-menu.active {background: #fff; box-shadow: 0 0px 2px rgba(50, 50, 50, 0.25);}
     .head-menu.active ul li a {color: #231f20;}
 
 .wr {width: 1000px; margin: 0 auto;}
@@ -159,7 +167,7 @@ body {font: normal 15px 'latoregular';}
                 .tariff-txt strong {font: normal 18px 'latobold';}
             .tariff-sr-left .tariff-item.active {background: #f8f8f8;}
             .tariff-sr-right .tariff-item.active {background: #fff;}
-            .tariff-txt span {width: 140px; color: #ed1c24; position: absolute; right: 0; bottom: 0;}
+            .tariff-txt span {width: 140px; color: #ed1c24; position: absolute; right: 0; bottom: 1px;}
         .tariff-height {height: 21px;}
 .tariff-comment {width: 500px; margin: 0 auto; padding: 0 0 46px 32px; font: normal 18px 'latoregular';} 
     .tariff-comment ul {padding: 30px 0 0px;margin: 0;}
@@ -173,11 +181,11 @@ body {font: normal 15px 'latoregular';}
                 -webkit-transition: all 0.2s linear;
                 -o-transition: all 0.2s linear;
                 transition: all 0.2s linear;}
-                .terms_service-lnk a:before {position: absolute; content: ' '; right: -22px; top: 15px;
+                .terms_service-lnk a:after {position: absolute; content: ' '; right: -22px; top: 15px;
                     border-left: 6px solid transparent;
                     border-right: 6px solid transparent;
                     border-top: 6px solid #ed1c24;} 
-                .terms_service-lnk a.active:before {
+                .terms_service-lnk a.active:after {
                     border-top: 0;
                     border-bottom: 6px solid #ed1c24;
                 } 
@@ -214,7 +222,7 @@ body {font: normal 15px 'latoregular';}
                 transition: all 0.2s linear;}
             .faq-help-btn:hover {background: #d00a11;}
 .tariff-content {margin: 0 0 83px; position: relative;}
-    .tariff-content:before {content: ' '; position: absolute; top: 0; right: 0; width: 500px; height: 100%; border: 3px solid #ed1c24;
+    .tariff-content:before {content: ' '; position: absolute; top: 0; right: 0; width: 50%; height: 100%; border: 3px solid #ed1c24;
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
         box-sizing: border-box;}
@@ -230,8 +238,109 @@ body {font: normal 15px 'latoregular';}
                     
     
     .footer {background: #b0b1b5 url(../img/footer-bg.png) center 0 no-repeat; padding: 150px 0 60px; font: 13px/20px Arial; color: #fff; text-align: center;}
+        .footer p {margin: 0;}
+
+.mob-menu {display: none;}
 
 
+
+
+@media only screen and (max-width: 1000px) {
+
+    .wr {width: 710px;}
+    .tariff-table td {padding: 39px 0 45px 30px;}
+    .tariff-txt {padding-right: 95px; width: 230px;}
+    .tariff-txt span {width: 84px;}
+    .tariff-table td {font-size: 14px;}
+    .terms_service {overflow: hidden;}
+    .terms_service ul li {width: 210px;}
+    .logo {width: 280px;}
+    .head-menu ul {margin-right: -50px;}
+    .head-menu {overflow: hidden;}
+    .slide-action {width: auto; margin: 0 auto 50px;}
+        .slide-action br {display: none;}
+        .slide-action span {display: block;}
+    .advantages-items li {width: 213px; padding: 0 46px 0 0;}
+    .faq .wr {width: auto;}
+    .slide-main h1 {font: normal 55px 'latoheavy';}
+    body .slide-main {height: 496px !important;}
+
+
+
+}
+
+@media only screen and (max-width: 760px) {
+
+    .logo img {display: none;}
+    .logo {background: url(../img/logo-mob.png) 0 0 no-repeat; width: 78px; height: 28px; margin: 0 auto; float: none;}
+    body .head-menu, body .head-menu.active {background: #ed1c24; height: 46px; box-shadow: none; overflow: inherit;}
+    .head-menu ul {position: absolute; top: 67px; left: 0; right: 0; background: #ed1c24; padding-bottom: 25px; display: none;}
+    .head-menu ul li {float: none; display: block; text-align: center;}
+        .head-menu ul li a {display: block; height: 52px; color: #fff !important; font: normal 24px/52px 'latoregular';}
+        .head-menu ul li a:hover {background: #d00a11;}
+        .head-menu ul li a:before {display: none !important;}
+    .wr {width: auto;}
+    .mob-menu {display: block; float: right; width: 24px; height: 16px; background: url(../img/mob-menu.png) 0 0 no-repeat; margin: 6px 20px 0 0;}
+    .head-menu .mob-menu.active {background: url(../img/mob-menu-close.png) center center no-repeat;}
+    .slide-main h1 {font: normal 38px/40px 'latoheavy'; display: block; width: 267px; text-align: left; margin: 0 auto 18px;}
+    .slide-pointer {display: none;}
+    .slide-action {width: auto; padding: 0 21px 0 30px; text-align: left;}
+    .slide-main p {text-align: left; display: block; padding: 0 20px;}
+    .slide-main p br {display: none;}
+    .sl-style h2 {display: block; text-align: left; padding: 0 20px; font-size: 24px; line-height: 30px; margin-bottom: 36px;}
+    .sl-style h2 br {display: none;}
+    .advantages-items li {display: block; float: none; width: auto; padding: 0 20px; margin: 0 0 44px;}
+        .advantages-items li br {display: none;}
+    .advantages-items {margin: 0;}
+    .advantages {padding: 0 0 17px;}
+    .tariff {padding: 65px 0 0;}
+
+    .tariff-td-1 {display: block;}
+    .tariff-td-2 {display: none;}
+    .tariff-content:before {display: none;}
+    .tariff-txt span {position: relative; display: block; padding-top: 5px;}
+    .tariff-txt {padding: 0 0 15px; width: auto; font-size: 18px;}
+    .tariff-table td {width: auto; padding: 20px 20px 30px 20px}
+    .tariff-header {margin: 45px 20px 0; overflow: hidden; border: 3px solid #ed1c24;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;}
+    .tariff-table h4 {margin-bottom: 7px;}
+
+    .tariff-sr-left .tariff-sr-header, .tariff-sr-right .tariff-sr-header {background: #e9e9e9; color: #ed1c24; font-family: 'latobold'; height: 58px; line-height: 58px;}
+    .tariff-sr-left.active .tariff-sr-header, .tariff-sr-right.active .tariff-sr-header {background: #ed1c24; color: #e9e9e9;}
+    .tariff-comment {width: auto; padding: 0 0 25px 20px; margin: 0 0 -2px; line-height: 24px;}
+    .terms_service {width: auto;}
+    .terms_service-lnk a:after {position: relative; right: auto; top: 22px; margin-left: 10px;}
+    .terms_service ul {margin: 0; }
+    .terms_service ul li {width: auto; margin: 0px 0 26px; padding: 0; text-align: center; float: none; font-size: 18px;}
+    .terms_service-lnk {padding: 0 0 30px;}
+    .faq {padding: 117px 0 0;}
+    .faq-it {padding: 30px 45px 35px 20px;}
+    .faq-btn {right: 20px;}
+    .faq-it:before {display: none;}
+    .faq-help {width: auto; text-align: center;}
+    .faq-help-info {position: relative; padding: 0 0 70px;}
+    .faq-help-btn {position: absolute; left: 50%; bottom: 0; margin-left: -82px;}
+    .footer {padding-left: 23px; padding-right: 23px; padding-bottom: 26px;}
+    .slide-action span {display: inline;}
+    .slide-main {background: #b0b1b5 url(../img/head-mob.jpg) center 67px no-repeat; padding-top: 160px; margin: 0;}
+    .advantages {background: #fff url(../img/mob-border.jpg) center -22px no-repeat; padding-top: 133px;}
+    .slide-main h1 {height: 152px;}
+    .slide-action {font: normal 22px/30px 'latoregular'; margin-bottom: 36px;}
+    .slide-main p {font: normal 18px/24px 'latoregular';}
+    .advantages-items li h4 {margin: 8px 0px 14px;}
+    .advantages-items li p {font: normal 18px/24px 'Arial';}
+    .advantages-items li p i {display: none;}
+    .tariff-comment ul {padding-top: 24px;}
+    .faq-help h3 {font-size: 18px;}
+    .faq-help-info {font-size: 18px; line-height: 24px;}
+    .faq-help {padding-left: 40px; padding-right: 40px; padding-bottom: 20px;}
+    .faq-help br {display: none;}
+    .footer p {margin: 0 0 7px;}
+
+
+}
 
 
 
