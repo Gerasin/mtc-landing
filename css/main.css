@@ -123,7 +123,7 @@ body {font: normal 15px 'latoregular';}
 .wr {width: 1000px; margin: 0 auto;}
     .sl-style h2 {text-align: center; font: normal 42px/48px 'latoheavy'; margin: 0 0 68px;}
 
-.slide-main {background: #fff url(../img/head.jpg) center 0 no-repeat; min-height: 496px; max-width: 2016px; padding: 229px 0 0; text-align: center; color: #fff;margin: 0 0 26px;}
+.slide-main {background: #fff url(../img/head.jpg) center 0 no-repeat; min-height: 532px; max-width: 2016px; padding: 229px 0 0; text-align: center; color: #fff;margin: 0 0 26px;}
     .slide-main h1 {font: normal 67px 'latoheavy'; margin: 0 0 18px;}
     .slide-action {text-align: center; font: normal 24px/32px 'latoregular'; margin: 0 0 50px;}
     .slide-main p {font: normal 15px/20px 'latoregular'; margin: 0 0 20px;}
@@ -159,7 +159,7 @@ body {font: normal 15px 'latoregular';}
         -moz-box-sizing: border-box;
         box-sizing: border-box;}
     .tariff-sr-right {background: #f2f2f2;  }
-        .tariff-sr-header {background: #d00a11; text-align: center; height: 64px; color: #fff; text-transform: uppercase; font: normal 18px/64px 'latoregular';}
+        .tariff-sr-header {background: #d00a11; text-align: center; height: 64px; color: #fff; text-transform: uppercase; font: normal 18px/64px 'latoheavy'; }
         .tariff-sr-right .tariff-sr-header {background: #ed1c24;}
         .tariff-item {padding: 39px 0 45px 80px; font: normal 15px 'latoregular';}
             .tariff-item h4 {margin: 0 0 17px; font: normal 18px 'latoheavy';}
@@ -208,7 +208,7 @@ body {font: normal 15px 'latoregular';}
             .faq-cont {padding: 23px 0 19px; color: #57585a; font-family: Arial; display: none;}
         .faq-it.active:before {background-position: -48px 0;}
         .faq-it.active .faq-btn {background-position: -20px 0;}
-        .faq-it.active {background: #fff; box-shadow: inset 0 0 2px #ed1c24;}
+        .faq-it.active {background: #fff; box-shadow: inset 0 0 0 2px #ed1c24;}
     .faq-help {margin: 0 auto; width: 460px; padding: 44px 0 60px;}
         .faq-help h3 {font: normal 24px 'latobold'; margin: 0 0 20px;}
         .faq-help-info {font: normal 15px 'latoregular'; color: #57585a;padding-right: 28px;}
@@ -298,7 +298,7 @@ body {font: normal 15px 'latoregular';}
     .tariff-td-1 {display: block;}
     .tariff-td-2 {display: none;}
     .tariff-content:before {display: none;}
-    .tariff-txt span {position: relative; display: block; padding-top: 5px;}
+    .tariff-txt span {position: relative; display: block; padding-top: 5px; width: auto !important;}
     .tariff-txt {padding: 0 0 15px; width: auto; font-size: 18px;}
     .tariff-table td {width: auto; padding: 20px 20px 30px 20px}
     .tariff-header {margin: 45px 20px 0; overflow: hidden; border: 3px solid #ed1c24;
@@ -324,11 +324,9 @@ body {font: normal 15px 'latoregular';}
     .faq-help-btn {position: absolute; left: 50%; bottom: 0; margin-left: -82px;}
     .footer {padding-left: 23px; padding-right: 23px; padding-bottom: 26px;}
     .slide-action span {display: inline;}
-    .slide-main {background: #b0b1b5 url(../img/head-mob.jpg) center 67px no-repeat; padding-top: 160px; margin: 0;}
-    .advantages {background: #fff url(../img/mob-border.jpg) center -22px no-repeat; padding-top: 133px;}
-    .slide-main h1 {height: 152px;}
+   
     .slide-action {font: normal 22px/30px 'latoregular'; margin-bottom: 36px;}
-    .slide-main p {font: normal 18px/24px 'latoregular';}
+    .slide-main p {font: normal 18px/24px 'latoregular'; margin: 0;}
     .advantages-items li h4 {margin: 8px 0px 14px;}
     .advantages-items li p {font: normal 18px/24px 'Arial';}
     .advantages-items li p i {display: none;}
@@ -338,7 +336,15 @@ body {font: normal 15px 'latoregular';}
     .faq-help {padding-left: 40px; padding-right: 40px; padding-bottom: 20px;}
     .faq-help br {display: none;}
     .footer p {margin: 0 0 7px;}
+    body .slide-main {height: auto !important; min-height: 150px;}
 
+
+}
+
+@media only screen and (max-width: 440px) {
+     .slide-main {background: #b0b1b5 url(../img/head-mob.jpg) center 67px no-repeat; padding-top: 160px; margin: 0;}
+    .advantages {background: #fff url(../img/mob-border.jpg) center -22px no-repeat; padding-top: 133px;}
+    .slide-main h1 {height: 152px;}
 
 }
 

@@ -17,10 +17,6 @@ $(document).ready(function(){
 	});
 
 	var windHeight = $(window).height();
-	var SlHeight = windHeight - 229;
-	if(windHeight > 725) {
-		$('.slide-main').height(SlHeight)
-	};
 
 
 	$('.terms_service-lnk a').click(function(){
