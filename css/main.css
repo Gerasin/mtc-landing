@@ -284,7 +284,7 @@ body {font: normal 15px 'latoregular';}
     .wr {width: auto;}
     .mob-menu {display: block; float: right; width: 24px; height: 16px; background: url(../img/mob-menu.png) 0 0 no-repeat; margin: 6px 20px 0 0;}
     .head-menu .mob-menu.active {background: url(../img/mob-menu-close.png) center center no-repeat;}
-    .slide-main h1 {font: normal 38px/40px 'latoheavy'; display: block; width: 267px; text-align: left; margin: 0 auto 18px;}
+    .slide-main h1 {font: normal 38px/40px 'latoheavy'; display: block; width: auto; text-align: left; margin: 0 auto 18px; padding-left: 30px;}
     .slide-pointer {display: none;}
     .slide-action {width: auto; padding: 0 21px 0 30px; text-align: left;}
     .slide-main p {text-align: left; display: block; padding: 0 20px;}
@@ -329,7 +329,7 @@ body {font: normal 15px 'latoregular';}
     .slide-action span {display: inline;}
    
     .slide-action {font: normal 22px/30px 'latoregular'; margin-bottom: 36px;}
-    .slide-main p {font: normal 18px/24px 'latoregular'; margin: 0;}
+    .slide-main p {font: normal 18px/24px 'latoregular'; margin: 0; padding-bottom: 20px;}
     .advantages-items li h4 {margin: 8px 0px 14px;}
     .advantages-items li p {font: normal 18px/24px 'Arial';}
     .advantages-items li p i {display: none;}
@@ -339,7 +339,7 @@ body {font: normal 15px 'latoregular';}
     .faq-help {padding-left: 40px; padding-right: 40px; padding-bottom: 20px;}
     .faq-help br {display: none;}
     .footer p {margin: 0 0 7px;}
-    body .slide-main {height: auto !important; min-height: 150px;}
+    body .slide-main {height: auto !important; min-height: 502px;;}
 
 
 }
